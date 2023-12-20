@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header {
+  .believe {
+    width: 100%;
+
+    p {
+      width: 70%;
+    }
+  }
+  .numberHead {
+    display: flex;
+    gap: 10px;
+    .iconPhone {
+      background-color: red;
+      padding: 10px;
+    }
+    .number {
+      margin-top: 10px;
+    }
+  }
+  #head-nav {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    .collapse {
+      ul {
+        display: flex;
+        gap: 15px;
+        li {
+          a {
+            color: black;
+            font-weight: 500;
+
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        .basketIcons {
+          margin-top: 10px;
+          display: flex;
+          gap: 20px;
+          i {
+            color: black;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#backImage {
+  background-image: url(../../../assets/image/header-bg.jpg);
+  width: 100%;
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .black {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .fitnes {
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+
+      h1 {
+        width: 50%;
+        font-weight: 500;
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    #backImage {
+      .black {
+        .fitnes {
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  main {
+    #backImage {
+      .black {
+        .fitnes {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.care-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.sixImages {
+  display: flex;
+  flex-direction: column;
+
+  .gymPhoto {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .redDiv {
+    background-color: rgb(246, 33, 75);
+    padding: 8px;
+    color: white;
+    width: 60%;
+    position: absolute;
+    top: 120px;
+    left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+  }
+  .running {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    p {
+      color: red;
+    }
+  }
+}
+
+@media (max-width: 323px) {
+  .sixImages {
+    .redDiv {
+      padding: 2px;
+      width: 50%;
+
+      h5 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 765px) and (min-width: 430px) {
+  .sixImages {
+    .redDiv {
+      top: 180px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#backimage2 {
+  background-image: url(../../../assets/image/callto-bg.jpg);
+  width: 100%;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+
+  margin-top: 30px;
+
+  .blackColor {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .huge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 100%;
+
+    p {
+      width: 60%;
+      text-align: center;
+    }
+    button {
+      padding: 13px;
+      border: none;
+      background-color: rgb(246, 33, 75);
+      border-radius: 50px;
+      color: white;
+      width: 250px;
+      border: 2px solid rgb(246, 33, 75);
+
+      &:hover {
+        background-color: rgb(227, 212, 212);
+        color: black;
+        font-weight: 500;
+        border: 2px solid rgb(246, 33, 75);
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  #backimage2 {
+    .blackColor {
+      .huge {
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 13px;
+        }
+        button {
+          width: 150px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.inputS {
+  margin: 30px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+
+  input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  button {
+    border: 0;
+    position: absolute;
+    margin-top: 1px;
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 10px;
+    width: 80px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+}
+
+@media (max-width: 545px) {
+  .inputS {
+    input {
+      width: 80%;
+    }
+  }
+}
+#products {
+  display: flex;
+  .box {
+    .boxDiv {
+      border: 2px solid black;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-color: whitesmoke;
+      img {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      h5,
+      p {
+        text-align: center;
+        margin-top: 10px;
+      }
+      button {
+        padding: 10px;
+        margin-left: 10px;
+        border: none;
+        background-color: red;
+        color: white;
+        margin-bottom: 25px;
+        border-radius: 16px;
+        border: 2px solid red;
+
+        &:hover {
+          background-color: white;
+          color: black;
+          border: 2px solid red;
+        }
+      }
+    }
+  }
+}
+
+#searchDiv {
+  display: flex;
+  width: 100%;
+  .srchPro {
+    .srchImage {
+      background-color: gray;
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      h5,
+      p {
+        display: flex;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.load {
+  #btn {
+    background-color: blue;
+    padding: 8px;
+    border: none;
+    border: 2px solid blue;
+    font-size: 20px;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: blue;
+      border: 2px solid blue;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  min-height: 60px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    .endYazi {
+      width: 50%;
+    }
+  }
+}
